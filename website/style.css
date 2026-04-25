@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info p,
+.iot-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Gaya untuk input pencarian kota */
+.controls {
+    margin-top: 20px;
+}
+
+.city-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    width: 70%;
+    max-width: 300px;
+}
+
+.city-input:focus {
+    border-color: #0056b3;
+}
+
+/* Gaya untuk tombol Get Weather */
+.weather-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s;
+}
+
+.weather-btn:hover {
+    background-color: #0056b3;
+}
+
+.iot-controls {
+    margin-top: 20px;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mode-btn:hover {
+    background-color: #0056b3;
+}
+
+.mode-btn.active {
+    background-color: #28a745;
+}
+
+.popup {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#interval-popup button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#interval-popup button:hover {
+    background-color: #0056b3;
+}

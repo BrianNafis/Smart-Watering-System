@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Watering System</h1>
+        
+        <!-- Bagian cuaca dari API OpenWeather -->
+        <div class="weather-info">
+            <p id="location">Location: </p>
+            <p id="temperature">Temperature: </p>
+            <p id="weather-description">Water: </p>
+        </div>
+
+        <!-- Pencarian kota dengan gaya tombol yang lebih menarik -->
+        <div class="controls">
+            <input type="text" id="city-input" class="city-input" placeholder="Enter city name">
+            <p><br></p>
+            <button id="get-weather-btn" class="weather-btn">Get Weather</button>
+        </div>
+
+        <!-- Bagian Monitoring IoT -->
+        <h2>IoT Monitoring</h2>
+        <div class="iot-info">
+            <p id="soil-moisture">Soil Moisture:  </p>
+            <p id="last-update">Time stamp:  </p>
+        </div>
+
+        <!-- Bagian Kontrol IoT -->
+        <h2>Control Watering Mode</h2>
+        <div class="iot-controls">
+            <button id="auto-mode-btn" class="mode-btn">Auto Mode</button>
+            <button id="interval-mode-btn" class="mode-btn">Interval Mode</button>
+            <button id="manual-mode-btn" class="mode-btn">Manual Mode</button>
+        </div>
+
+        <!-- Popup untuk pengaturan interval -->
+        <div id="interval-popup" class="popup hidden">
+            <h3>Set Watering Interval</h3>
+            <label for="interval-hours">Hours: </label>
+            <input type="number" id="interval-hours" min="0" max="24" value="0">
+            <label for="interval-minutes">Minutes: </label>
+            <input type="number" id="interval-minutes" min="0" max="59" value="0">
+            <button id="set-interval-btn">Set Interval</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

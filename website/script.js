@@ -197,7 +197,7 @@ document.getElementById('get-weather-btn').addEventListener('click', () => {
     }
 });
 
-// Fungsi untuk memulai polling data moisture
+// Fungsi untuk memulai polling data moisture 
 function startMoisturePolling() {
     // Ambil data setiap 5 detik
     setInterval(fetchMoistureData, 5000);

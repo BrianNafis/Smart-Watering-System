@@ -182,7 +182,7 @@ document.getElementById('set-interval-btn').addEventListener('click', () => {
     setInterval(() => {
         if (document.getElementById('interval-mode-btn').classList.contains('active')) {
             console.log('Interval watering activated');
-            // Di sini bisa ditambahkan kode untuk mengaktifkan pompa air
+            // Di sini bisa ditambahkan kode untuk mengaktifkan WaterPump
         }
     }, intervalTime * 60 * 1000);
 });
